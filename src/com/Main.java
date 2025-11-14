@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 	 
-	private static Scanner sc = new Scanner(System.in);
+	
 	  
     public static void main(String[] args) {
     	
@@ -12,11 +12,11 @@ public class Main {
         do {
             TresEnRaya.mostrarMenu();
             System.out.print("Elige una opción: ");
-            while (!sc.hasNextInt()) {
+            while (!TresEnRaya.sc.hasNextInt()) {
                 System.out.println("Introduce un número válido (1-3).");
-                sc.next();
+                TresEnRaya.sc.next();
             }
-            opcion = sc.nextInt();
+            opcion = TresEnRaya.sc.nextInt();
 
             switch (opcion) {
                 case 1 ->  TresEnRaya.jugar();

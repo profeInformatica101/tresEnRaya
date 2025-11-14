@@ -11,7 +11,7 @@ public class TresEnRaya {
     public static final char VACIO = '_';
     public static char turno = JUGADOR1;
 
-    private static Scanner sc = new Scanner(System.in);
+    public static Scanner sc = new Scanner(System.in);
 
     public static void mostrarMenu() {
         System.out.println("############################");
